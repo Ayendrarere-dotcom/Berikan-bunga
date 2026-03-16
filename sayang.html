@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Memberi Bunga</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+background:linear-gradient(#ffd6e7,#fff0f5);
+}
+
+h1{
+color:#e60073;
+}
+
+#scene{
+font-size:80px;
+margin-top:40px;
+transition:0.5s;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#ff4d88;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#e6005c;
+}
+
+#message{
+margin-top:20px;
+font-size:22px;
+color:#cc0066;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🌸 Memberi Bunga kepada Pasangan 🌸</h1>
+
+<div id="scene">
+👨 ➡️ 👩
+</div>
+
+<br>
+
+<button onclick="giveFlower()">Berikan Bunga 🌹</button>
+
+<div id="message">Klik tombol untuk memberi bunga kepada pasangan</div>
+
+<script>
+
+function giveFlower(){
+
+document.getElementById("scene").innerHTML = "👨🌹👩";
+
+document.getElementById("message").innerText =
+"Yay terimakasih sayangku yang tampan❤️";
+
+}
+
+</script>
+
+</body>
+</html>
